@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:300');
+
+* { padding: 0; margin: 0; border: 0; }
+
+/*.....CONTAINER.......*/
+.container {
+  width: 900px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 15px;
+  background: rgb(94,113,138);
+  color: white;
+  margin: 0 auto;
+}
+/*....HEADER........... */
+.header {
+  display: flex;
+}
+.header-block {
+  flex-basis: 20%;
+  display: flex;
+  background-image: linear-gradient(to bottom, rgb(131,151,185), rgb(90,112,137));
+  border: 2px rgb(98,118,146) solid;
+}
+.header-text {
+  padding: 10px;
+}
+.header-value {
+  font-family: 'Teko', sans-serif;
+  font-size: 35px;
+  line-height: 30px;
+  margin-top: 6px;
+}
+.header-value span {
+  color: rgb(183,232,238);
+}
+.header-icon {
+  display: flex;
+  align-self: center;
+  height: 60%;
+}
+.icon {
+  display: inline-block;
+  background: rgb(183,232,238);
+  width: 10px;
+  height: 10px;
+}
+.icon.icon-minus {
+  width: 18px;
+  height: 8px;
+}
+.icon.icon-arrow-bottom {
+  width: 8px;
+  height: 18px;
+}
+/*.......IMAGE......*/
+.picture-img{
+	width: 100%;
+	height: 350px;
+}
+
+/*.....General....... */
+
+.general {
+  display: flex;
+  width: 100%;
+}
+.general-day {
+  flex-grow: 1;
+  flex-basis: 1%;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, rgb(131,151,185), rgb(90,112,137));
+}
+.general-day-time {
+  font-family: 'Teko', sans-serif;
+  font-size: 55px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+.general-values {
+  flex-grow: 2;
+  flex-basis: 1%;
+  display: flex;
+}
+.general-chart, .general-next, .general-target {
+  padding: 10px;
+  background-image: linear-gradient(to top, rgb(131,151,185), rgb(90,112,137));
+  flex-grow: 1;
+  flex-basis: 33%;
+  border: 2px rgb(98,118,146) solid;
+}
+
+.next-burn {
+  display: flex;
+  flex-direction: column;
+  font-size: smaller;
+  margin: 0px 10px;
+}
+.next-burn-header {
+  display: flex;
+  justify-content: space-between;
+}
+.next-burn-title {
+  color: rgb(184,199,205);
+}
+.next-burn-status {
+  color: rgb(177,235,241);
+}
+.next-burn-status:after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: rgb(177,235,241);
+  border-radius: 50%;
+  margin-left: 4px;
+}
+.next-burn-value {
+  font-family: 'Teko', sans-serif;
+  font-size: 35px;
+  line-height: 30px;
+  margin-top: 6px;
+}
+.next-burn-datetime {
+  display: flex;
+  justify-content: space-between;
+}
+.next-burn-time {
+  color: rgb(184,199,205);
+}
+.next-burn-day {
+  color: rgb(161,178,198);
+}
+
+.target {
+  display: flex;
+  flex-direction: column;
+  font-size: smaller;
+  margin: 0px 10px;
+}
+.target-header {
+  color: rgb(184,199,205);
+}
+.target-value {
+  font-family: 'Teko', sans-serif;
+  font-size: 35px;
+  line-height: 30px;
+  margin-top: 6px;
+}
+.target-status {
+  color: rgb(177,235,241);
+}
+/*.......NOTIFICATION......*/
+
+.notifications {
+  display: flex;
+  background-image: linear-gradient(to bottom, rgb(110,133,162), rgb(103,126,154));
+}
+.notifications-alarms, .notifications-all {
+  flex-grow: 1;
+  flex-basis: 50%;
+  align-self: center;
+  padding: 25px 10px;
+  color: rgb(222,243,245);
+}
+.notifications-alarms {
+  font-family: 'Teko', sans-serif;
+  font-size: 45px;
+  line-height: 30px;
+  margin-top: 6px;
+}
+.notifications-alarms span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.notifications-all {
+  text-transform: uppercase;
+  text-align: right;
+  font-family: 'Teko', sans-serif;
+  font-size: 35px;
+  line-height: 30px;
+  margin-top: 6px;
+}
+.notifications-all span {
+  display: inline-block;
+  margin-right: 15px;
+}
+/*.......LOS......*/
+.los { display: flex; }
+.los-left,
+.los-right {
+  flex-grow: 1;
+  flex-basis: 50%;
+  border: 2px rgb(98,118,146) solid;
+}
+.los-right {
+  padding: 10px;
+  background-image: linear-gradient(to bottom, rgb(131,151,185), rgb(90,112,137));
+  display: flex;
+  flex-direction: column;
+}
+.los-left {
+  display: flex;
+  flex-direction: column;
+}
+.los-next,
+.los-estimated {
+  padding: 10px;
+  background-image: linear-gradient(to bottom, rgb(131,151,185), rgb(90,112,137));
+}
+.los-deorbit {
+  padding: 10px;
+}
+.los-next,.los-estimated,.los-deorbit {
+  flex-grow: 1;
+  display: flex;
+}
+.los-next-left,
+.los-next-label,
+.los-next-time,
+.los-estimated-left,
+.los-estimated-label,
+.los-estimated-time,
+.los-deorbit-left,
+.los-deorbit-label,
+.los-deorbit-time {
+  flex-grow: 1;
+  flex-basis: 10%;
+}
+
+.los-next-label span,
+.los-next-time span,
+.los-estimated-label span,
+.los-estimated-time span,
+.los-deorbit-label span,
+.los-deorbit-time span {
+  display: block;
+  color: rgb(190,206,219);
+  font-size: smaller;
+}
+.los-next-time,.los__estimated_time,.los__deorbit_time {
+  text-align: right;
+  align-self: center;
+}
+.los-next-left,.los-estimated-left,.los-deorbit-left {
+  font-family: 'Teko', sans-serif;
+  font-size: 35px;
+  line-height: 30px;
+  margin-top: 6px;
+  align-self: center;
+}
+.los-next-label,.los-estimated-label,.los-deorbit-label {
+  flex-grow: 2;
+   align-self: center;
+}
+span.los__next_day,span.los__estimated_day,span.los__deorbit_day {
+  color: white;
+}
+
+.los-right-next {
+  background: green;
+}
+
+.los-breakout:before {
+  content: '';
+  background: rgb(86,108,134);
+  left: 0;
+  margin-top: -15px;
+  width: 100%;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+}
+.los-breakout {
+  margin-top: 15px;
+  position: relative;
+  padding: 10px;
+  display: flex;
+}
+.los-breakout-left,
+.los-breakout-value {
+  flex-grow: 1;
+}
+.los-breakout-label {
+  color: rgb(177,235,241);
+}
+.los-breakout-label,
+.los-breakout-help {
+  font-size: smaller;
+}
+.los-breakout-value {
+  text-align: right;
+  align-self: center;
+}
+
+/*.......SCHEDULE......*/
+.schedule {
+  display: flex;
+  flex-direction: column;
+}
+.schedule-header {
+  flex-grow: 1;
+  display: flex;
+  background: rgb(104,127,156);
+  padding: 15px 10px;
+}
+.schedule-header-left,.schedule-header-right {
+  flex-grow: 1;
+  font-size: 20px;
+}
+.schedule-header-right {
+  text-align: right;
+  text-transform: uppercase;
+}
+.schedule-header-right span {
+  display: inline-block;
+  margin-right: 10px;
+}
+#container_schedule-timeline{
+	margin-top: 2px;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to bottom, rgb(131,151,185), rgb(90,112,137));
+
+}
+.schedule-timeline {
+  height: 150px;
+  width: 100px;
+    line-height: 1.8;
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(190,206,219);
+    font-size: 23px;
+
+}
+hr{
+  padding: 0;
+    margin: 0;
+    height: 1px;
+    border: none;
+    background-color: rgb(82, 108, 136);
+}
+.indicator_time-line{
+  display: flex;
+  flex-direction: column;
+}
+.dotted{
+  height: 65px;
+    color: white;
+    border-left: 4px dashed;
+    margin-top: 30px;
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: white;
+    margin-left: -5px;
+
+}
+.line_time{
+  height: 65px;
+    color: white;
+    border-left: 4px solid;
+}
+
+.schedule-list{
+  display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 79%;
+    color: rgb(155, 177, 196);
+    line-height: 2.5;
+    margin-left: 15px;
+    margin-top: 33px;
+}
+.schedule-list div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.schedule-process {
+  padding: 3px;
+}
+/*.........table.......*/
+.rendezvous-approach{
+display: flex;
+flex-direction: row;
+height: 50px;   
+}
+.rendezvous-title{
+    width: 70%;
+    background: rgb(132, 161, 197);
+    line-height: 2.5;
+    padding-left: 10px;
+}
+.rendezvous-title span{
+font-family: 'Teko', sans-serif;
+flex-grow: 1;
+font-size: 20px;
+margin-top: 50%;
+
+}
+.approach-title{
+    width: 30%;
+    background: rgb(132, 161, 197);
+    border-left: 2px solid rgb(98, 115, 143);
+    font-family: 'Teko', sans-serif;
+    line-height: 2.5;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+.events-table{
+display: flex;
+height: 250px;
+background: rgb(88, 113, 151);
+}
+.footer{
+	display: flex;
+
+	height: 40px;
+	width: 100%;
+	background: rgb(132, 161, 197);
+}
